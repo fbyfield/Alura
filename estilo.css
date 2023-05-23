@@ -1,0 +1,176 @@
+*{
+    background-color: rgb(127, 245, 162);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    
+}
+
+.logoalura{
+   padding-top: 10px;
+   margin-left: 10px; 
+   width: 2%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;  
+    margin-left: 80px;
+}
+
+.texto1{
+    border: none;
+    color: rgb(4, 4, 99);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder{ color: green;}
+
+.texto1:focus{
+    outline: none;
+}
+
+.cuadroDeResultado{
+    background: white;    
+    background-image: url("muneco.png");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 100px;
+    border: none;
+    border-radius: 32px;
+    color: black;
+    margin-left: 150px;
+    margin-top: 10px;
+    padding-left: 45px;
+    position: absolute;
+    width: auto;
+}
+
+.cuadroDeResultado:focus{
+    outline: none;
+}
+
+
+.informativo{
+    color:rgb(4, 4, 99);
+    font-size: 18px;
+
+}
+
+.informativo::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("exclamation.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.encriptar{
+    background-color: azure;
+    border: 1px solid azure;
+    border-radius: 24px;
+    color: green;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.encriptar:hover{
+    transform: scale(1.1);
+    font-size: 36px;
+    border: 2px solid green;
+}
+
+.desencriptar{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 24px;
+    color: azure;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.desencriptar:hover{
+    transform: scale(1.1);
+    font-size: 35px;
+    border: 2px solid white;
+}
+
+#texto2{
+    font-size: 24px;
+    line-height: 29px;
+    background-color: white;
+    text-align: center;
+    color: #343A40;
+    border: none;
+
+    position: absolute;
+    height: 50px;
+    width:336px;
+    top: 520px;
+    margin-left: 190px;
+  
+}
+
+#texto3{
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+    text-align: center;
+    color: #343A40;
+
+    position: absolute;  
+    height: 50px;
+    width:336px; 
+    top: 600px;
+    margin-left: 190px;
+}
+
+.copiar{
+    background-color: rgb(127, 245, 162);
+    border: 1px solid rgb(4, 4, 99);
+    border-radius: 24px;
+    color:rgb(4, 4, 99);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 190px;
+    margin-top: 650px;
+    position: absolute; 
+    width: 336px;
+}
+
+.copiar:hover{
+    transform: scale(1.1);
+    font-size: 35px;
+    border: 2px solid green;
+}
+
+@media screen  and (max-width:280px){
+    
+    .cuadroDeResultado{
+        width: auto;
+        margin-left: 30px;
+        margin-right: 100px;
+    }
+
+    .copiar{
+        margin-left: 70px;
+        width: 250px;
+    }
+
+
+}
